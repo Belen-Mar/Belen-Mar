@@ -1,0 +1,629 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* HEADER */
+.hero {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 10%;
+    background: url("../img/banner.jpg")no-repeat;
+    background-size: cover;
+    
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu-img{
+    width: 30px;
+    cursor: pointer;
+    
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    margin-right: 150px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+
+
+nav ul li a:hover::before{
+    height: 85px;
+}
+
+.row-banner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-banner {
+    flex-basis: 50%;
+    position: relative;
+    margin-top: 30px;
+    
+} 
+
+
+.feature-img{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.col-banner h1 {
+    margin-top: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.col-banner p {
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+/* HEADER FIN  */
+
+/*BANNER*/
+
+
+.banner {
+    height: var(--banner-height);
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 200%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 1s ease 0s;
+}
+
+.banner:hover .banner-bg {
+    transform: scale(1.2);
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--text-white);
+    padding: 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.section {
+    padding-top: var(--section-space);
+}
+
+.section-header {
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+
+:root {
+   
+    --second-bg: #f5f5f5;
+    --text-white: #ffffff;
+    --main-hover: #9b2d25;
+    --section-space: 100px;
+    --nav-size: 70px;
+    --banner-height: 600px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -50px;
+    margin-top: -120px;
+}
+
+[class*="col-"] {
+    padding: 0 15px;
+}
+
+
+
+.container-fluid {
+    padding: 0 30px;
+}
+.col-banner a {
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 30px;
+    background: #8C1C13;
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    margin-top: 70px;
+    box-shadow: 5px 8px 10px rgb(0, 0, 0, 0.1);
+}
+
+/* BANNER FIN */
+
+/* SERVICIOS */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+.services {
+    padding: 80px 0;
+    text-align: center;
+
+}
+
+h2 {
+    color: #8C1C13;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 800;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px
+}
+
+.services-1 {
+    flex-basis: calc(33.3%) - 40px;
+    cursor: pointer;
+}
+.services-1:hover {
+
+    transform: scale(1.2);
+
+}
+
+.services-1 img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.services-1 h3 {
+    color: #1B1B1D;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.products {
+    padding: 0 0 80px 0;
+    text-align: center;
+}
+
+.products-content {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.products-1 {
+    background-color: #F7F7F7;
+    padding: 20px;
+}
+.products-1:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+
+
+.products-1 h4 {
+    color: #1B1B1D;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.products-1 p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.img-producto2{
+    margin-top: 120px;
+}
+.img-producto3{
+    margin-top: 120px;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #FFFFFF;
+    background-color: #8C1C13;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.btn-1:hover {
+    background-color: #F38004;
+}
+
+/* SERVICIIOS FIN */
+/* SUBSCRIPCION FORM */
+
+.container-wapper{
+    padding: 50px 50px;
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    
+}
+
+.container-wapper p {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.email-box {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.tbox, .btn {
+
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+}
+.tbox {
+    width: 260px;
+    display: flex;
+}
+
+.email-box:hover > .tbox,tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    background-color: #8C1C13;
+    color: var(--text-white);
+    font-size: 1rem;
+    text-transform: uppercase;
+   
+}
+
+.btn:hover {
+    background-color: var(--main-hover);
+}
+
+.btn-lg {
+    padding: 1rem 3.5rem;
+    font-size: 1.5rem;
+}
+
+/* SUBSCRIPCION FORM FIN*/
+
+/*XXXXXXXXXXXXXXCONTACTOXXXXXXXXXXXXXXXXX*/
+
+.contacto {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto .content  {
+    max-width: 880px;
+    text-align: center;
+}
+
+.contacto .content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8C1C13;
+
+}
+
+.contacto .content p {
+    font-weight: 300;
+    color: black;
+
+}
+
+.containercontacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.containercontacto .contactoInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+} 
+
+.containercontacto .contactoInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.containercontacto .contactoInfo .box .icono img  {
+
+    min-width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    font-size: 22px;
+
+}
+
+
+.containercontacto .contactoInfo .box .texto {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.containercontacto .contactoInfo .box .texto h3 {
+    font-weight: 600;
+    color: #8C1C13;
+}
+
+.contactoForm {
+    width: 40%;
+    padding: 40px;
+    background: #BAA1A7;
+}
+
+.contactoForm h2 {
+    font-size: 30px;
+    color: #8C1C13;
+    font-weight: 500;
+}
+
+
+.contactoForm .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactoForm .inputbox input {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactoForm .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+
+}
+
+
+.contactoForm .inputbox input[type="submit"] {
+    width: 100px;
+    background: #8C1C13;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+/*FOOTER*/
+
+.pie-pagina {
+    background-color: #8C1C13;
+    padding: 170px;
+    padding-top: 35px;
+    margin-top: -100px;
+}
+
+.col-pie {
+    width: 25%;
+    float: left;
+}
+
+.pie-pagina h3{
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.pie-pagina h3::after {
+    content: '.';
+    font-size: 0;
+    width: 90%;
+    height: 1px;
+    background-color: #292929;
+    display: block;
+    margin: 15px 0px;
+
+}
+
+.pie-pagina li {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.4;
+}
+.copyright {
+    color: #585858;
+    margin-top: 32px;
+}
+.social a{
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+   
+    text-align: center;
+    line-height: 44px;
+}
+
+.social li{
+    display: inline-block;
+}
+
+
+.social a:hover {
+    transform: scale(1.2);
+} 
+
+
+.pie-pagina li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.col-pie:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+/************ PAGINA DE PRODUCTOS ****************/
+
+/* PRODUCTOS - TOM FORD */
+
+.about .row-contenedor {
+    display: flex;
+    align-items: center;
+   flex-wrap: wrap;
+   background: url("../img/tomfordperfu.jpg");
+   cursor: pointer;
+
+}
+
+.about .row-contenedor:hover {
+    transform: scale(1.1);
+}
+.about .row-contenedor .imagen {
+    flex: 1 1 45rem;
+}
+
+.about .row-contenedor .imagen img{
+    width: 60%;
+}
+
+.about .row-contenedor .content-container{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row-contenedor .content-container h3{
+    font-size: 3rem;
+    color: #8C1C13;
+    padding: 0.5rem 0;
+    line-height: 1.8;
+    margin-bottom: -680px;
+    margin-left: -70px;
+}
+
+.about .row-contenedor .content-container p {
+    margin-top: 80px;
+    margin-left: -50px;
+}
+
+.about .row-contenedor .content-container {
+    margin-left: -300px;
+}
+
+
